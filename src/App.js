@@ -1,7 +1,8 @@
 // App.js or index.js
 
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { UserContext } from "./UserContext";
 import "./App.css";
 
 import { getUser } from "./apis/api";
@@ -21,30 +22,32 @@ function App() {
 
     setAddress(account);
 
-    if (address) {
-      isAdminAddress(address);
+    if (account) {
+      isAdminAddress(account);
     }
   };
 
   const isAdminAddress = (address) => {
     console.log("address", address, adminAddress);
     if (address && address !== adminAddress) {
-      window.location.assign("/");
+      return false;
     } else {
-      window.location.assign("/login");
+      return true;
     }
   };
+
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          {address && (
-            <>
-              <Route path="/qrpage" element={<QrPage address={address} />} />
-              <Route path="/login" element={<LoginPage address={address} />} />
-            </>
-          )}
-        </Routes>
+        <UserContext.Provider value={{ address }}>
+          <Routes>
+            <Route path="/qrpage" element={<QrPage />} />
+            <Route
+              path="/login"
+              element={isAdminAddress ? <LoginPage /> : <Navigate to={"/"} />}
+            />
+          </Routes>
+        </UserContext.Provider>
       </BrowserRouter>
       <div className="connect-wallet-page">
         <div className="connect-wallet-container">

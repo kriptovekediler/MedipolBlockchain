@@ -1,0 +1,12 @@
+2023-12-16 23:27:33:2733 [31merror[39m: [31mCast to string failed for value "{}" (type Object) at path "address" for model "User"[39m
+2023-12-16 23:28:06:286 [31merror[39m: [31mCast to string failed for value "{}" (type Object) at path "address" for model "User"[39m
+2023-12-16 23:28:39:2839 [31merror[39m: [31mCast to string failed for value "{}" (type Object) at path "address" for model "User"[39m
+2023-12-16 23:29:21:2921 [31merror[39m: [31mCast to string failed for value "{}" (type Object) at path "address" for model "User"[39m
+2023-12-16 23:30:11:3011 [31merror[39m: [31mAccount is not defined[39m
+2023-12-16 23:30:24:3024 [31merror[39m: [31mUser validation failed: address: Path `address` is required., email: Path `email` is required.[39m
+2023-12-16 23:30:40:3040 [31merror[39m: [31mUser validation failed: address: Path `address` is required., email: Path `email` is required.[39m
+2023-12-16 23:30:57:3057 [31merror[39m: [31mUser validation failed: address: Path `address` is required., email: Path `email` is required.[39m
+2023-12-16 23:35:26:3526 [31merror[39m: [31mUser validation failed: address: Path `address` is required., email: Path `email` is required.[39m
+2023-12-16 23:36:13:3613 [31merror[39m: [31mCast to string failed for value "{}" (type Object) at path "address" for model "User"[39m
+2023-12-16 23:43:27:4327 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
+2023-12-17 01:40:26:4026 [31merror[39m: [31mUser validation failed: address: Path `address` is required.[39m

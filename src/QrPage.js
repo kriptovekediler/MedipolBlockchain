@@ -4,7 +4,7 @@ import React from "react";
 import QRCode from "qrcode.react";
 
 const QrPage = () => {
-  const qrCodeValue = "https://example.com"; // Replace with your actual data
+  const qrCodeValue = "balblablablalbal"; // Replace with your actual data
 
   return (
     <div className="qr-container">

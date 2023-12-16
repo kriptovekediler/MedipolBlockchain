@@ -4,7 +4,6 @@ import "./FormComponent.css";
 import { ethers } from "ethers";
 
 const FormComponent = () => {
-  const [user, setUser] = useState();
   const [formData, setFormData] = useState({
     name: "",
     date: new Date(),
@@ -52,10 +51,6 @@ const FormComponent = () => {
   };
 
   const getSignature = async (msg) => {
-    const provider = new ethers.JsonRpcProvider(
-      "https://rpc-mumbai.maticvigil.com/"
-    );
-    console.log("signer1", provider);
     const sign = await window.ethereum.request({
       method: "personal_sign",
       params: [msg, user],

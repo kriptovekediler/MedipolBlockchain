@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useApi } from "./apis/api";
+import { UserContext } from "./UserContext";
 
-const LoginPage = ({ address }) => {
+const LoginPage = () => {
   const { loginUser } = useApi();
+
+  const { address } = useContext(UserContext);
   const [formData, setFormData] = useState({
     email: "",
     tc: "",
