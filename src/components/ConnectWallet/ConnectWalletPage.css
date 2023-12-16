@@ -1,0 +1,28 @@
+/* ConnectWalletPage.css */
+
+.connect-wallet-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.connect-wallet-container {
+  text-align: center;
+}
+
+.connect-wallet-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #3498db; /* Set your desired button color */
+  color: #ffffff; /* Set your desired text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connect-wallet-button:hover {
+  background-color: #2980b9; /* Set your desired button color on hover */
+}
