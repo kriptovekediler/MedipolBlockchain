@@ -732,3 +732,53 @@
 [35m[39m
 2023-12-17 07:51:19:5119 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 383.080 ms[39m
 [35m[39m
+2023-12-17 08:21:15:2115 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 182.659 ms[39m
+[35m[39m
+2023-12-17 08:21:15:2115 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 151.069 ms[39m
+[35m[39m
+2023-12-17 08:29:17:2917 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 176.868 ms[39m
+[35m[39m
+2023-12-17 08:29:17:2917 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 161.812 ms[39m
+[35m[39m
+2023-12-17 08:34:56:3456 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 160.407 ms[39m
+[35m[39m
+2023-12-17 08:34:56:3456 [35mhttp[39m: [35mGET /register/denounce/657e5484d52ce3fa925cdf5a 304 - - 161.475 ms[39m
+[35m[39m
+2023-12-17 08:35:29:3529 [35mhttp[39m: [35mPOST /register/login 200 237 - 358.067 ms[39m
+[35m[39m
+2023-12-17 08:35:48:3548 [35mhttp[39m: [35mPOST /register/registerDenounce 200 519 - 657.957 ms[39m
+[35m[39m
+2023-12-17 08:36:09:369 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 200 519 - 167.918 ms[39m
+[35m[39m
+2023-12-17 08:36:09:369 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 152.237 ms[39m
+[35m[39m
+2023-12-17 08:36:46:3646 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 163.228 ms[39m
+[35m[39m
+2023-12-17 08:37:01:371 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 160.641 ms[39m
+[35m[39m
+2023-12-17 08:37:01:371 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 150.063 ms[39m
+[35m[39m
+2023-12-17 08:37:08:378 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 161.121 ms[39m
+[35m[39m
+2023-12-17 08:38:46:3846 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 161.418 ms[39m
+[35m[39m
+2023-12-17 08:38:51:3851 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 148.658 ms[39m
+[35m[39m
+2023-12-17 08:38:57:3857 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 159.699 ms[39m
+[35m[39m
+2023-12-17 08:39:00:390 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 159.435 ms[39m
+[35m[39m
+2023-12-17 08:39:02:392 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 150.482 ms[39m
+[35m[39m
+2023-12-17 08:39:04:394 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 160.964 ms[39m
+[35m[39m
+2023-12-17 08:39:08:398 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 162.087 ms[39m
+[35m[39m
+2023-12-17 08:39:13:3913 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 149.985 ms[39m
+[35m[39m
+2023-12-17 08:39:15:3915 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 160.305 ms[39m
+[35m[39m
+2023-12-17 08:39:18:3918 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 168.932 ms[39m
+[35m[39m
+2023-12-17 08:39:23:3923 [35mhttp[39m: [35mGET /register/denounce/657e88b436d50310c23f2a93 304 - - 151.218 ms[39m
+[35m[39m

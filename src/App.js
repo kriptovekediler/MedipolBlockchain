@@ -16,7 +16,7 @@ function App() {
 
   const isAdminAddress = (address) => {
     console.log("address", address === adminAddress);
-    console.log("address", address, adminAddress);
+    console.log("addresss", address, adminAddress);
     if (address === adminAddress) {
       window.location.assign("/");
     } else {

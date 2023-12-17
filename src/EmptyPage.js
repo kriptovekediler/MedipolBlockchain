@@ -20,12 +20,12 @@ const EmptyPage = () => {
       const denounceToSet = await getDenouncement(routingAddress);
 
       setDenounce(denounceToSet.data);
-      console.log("denounsssce", denounce);
+      console.log("denounsssces", denounce);
 
       const provider = new ethers.providers.Web3Provider(window.ethereum);
 
       const signer = provider.getSigner();
-      console.log("signesr", signer);
+      console.log("signessr", signer);
 
       const contract = new ethers.Contract(contractAddress, abi, signer);
 
@@ -38,7 +38,7 @@ const EmptyPage = () => {
           denounce.drugSubstance,
           denounce.clinicalTrialResults,
           denounce.qualityControl,
-          5,
+          3,
           denounce.signature,
           0
         );
