@@ -73,3 +73,33 @@
 2023-12-17 01:40:26:4026 [31merror[39m: [31mUser validation failed: address: Path `address` is required.[39m
 2023-12-17 01:42:03:423 [35mhttp[39m: [35mPOST /register/login - - - - ms[39m
 [35m[39m
+2023-12-17 03:44:43:4443 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 03:44:43:4443 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 03:44:49:4449 [35mhttp[39m: [35mPOST /register/login 200 237 - 192.783 ms[39m
+[35m[39m
+2023-12-17 03:50:59:5059 [35mhttp[39m: [35mPOST /register/login 200 237 - 194.618 ms[39m
+[35m[39m
+2023-12-17 03:51:27:5127 [35mhttp[39m: [35mPOST /register/login 200 237 - 174.788 ms[39m
+[35m[39m
+2023-12-17 03:51:41:5141 [35mhttp[39m: [35mPOST /register/login 200 237 - 186.104 ms[39m
+[35m[39m
+2023-12-17 03:51:55:5155 [35mhttp[39m: [35mPOST /register/login 200 237 - 191.693 ms[39m
+[35m[39m
+2023-12-17 03:52:26:5226 [35mhttp[39m: [35mPOST /register/login 200 237 - 168.600 ms[39m
+[35m[39m
+2023-12-17 03:52:34:5234 [35mhttp[39m: [35mPOST /register/login 200 237 - 204.989 ms[39m
+[35m[39m
+2023-12-17 03:52:48:5248 [35mhttp[39m: [35mPOST /register/login 200 237 - 217.270 ms[39m
+[35m[39m
+2023-12-17 03:52:57:5257 [35mhttp[39m: [35mPOST /register/login 200 237 - 186.335 ms[39m
+[35m[39m
+2023-12-17 03:53:06:536 [35mhttp[39m: [35mPOST /register/login 200 237 - 219.501 ms[39m
+[35m[39m
+2023-12-17 03:53:40:5340 [35mhttp[39m: [35mPOST /register/login 200 237 - 191.052 ms[39m
+[35m[39m
+2023-12-17 03:54:45:5445 [35mhttp[39m: [35mPOST /register/login 200 237 - 192.411 ms[39m
+[35m[39m
+2023-12-17 03:58:32:5832 [35mhttp[39m: [35mPOST /register/login 200 237 - 186.887 ms[39m
+[35m[39m
+2023-12-17 03:59:26:5926 [35mhttp[39m: [35mPOST /register/login 200 237 - 420.104 ms[39m
+[35m[39m

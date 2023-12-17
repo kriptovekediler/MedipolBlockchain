@@ -17,8 +17,8 @@ export const useApi = () => {
       },
     });
 
-    if (response.status === "success") {
-      localStorage.setItem("accountToken", response.data.token);
+    if (response.data.status === "success") {
+      localStorage.setItem("accountToken", response.data.data.token);
     }
     return response;
   };

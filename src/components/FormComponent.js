@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./FormComponent.css";
 
 import { ethers } from "ethers";
 
 const FormComponent = () => {
+  const [address, setAddress] = useState();
+
   const [formData, setFormData] = useState({
     name: "",
     date: new Date(),
@@ -19,6 +21,16 @@ const FormComponent = () => {
       [name]: value,
     }));
   };
+
+  useEffect(() => {
+    const getAccount = async () => {
+      const currentAccount = await window.ethereum.request({
+        method: "eth_accounts",
+      });
+      setAddress(currentAccount[0]);
+    };
+    getAccount();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,7 +48,7 @@ const FormComponent = () => {
     const msg = ethers.solidityPacked(
       ["address", "string", "uint", "string", "string", "string", "uint"],
       [
-        user,
+        address,
         formData.name,
         new Date(formData.date).getTime() / 1000,
         formData.drugSubstance,
@@ -53,7 +65,7 @@ const FormComponent = () => {
   const getSignature = async (msg) => {
     const sign = await window.ethereum.request({
       method: "personal_sign",
-      params: [msg, user],
+      params: [msg, address],
     });
     console.log("provider", sign);
     return sign;
@@ -61,9 +73,6 @@ const FormComponent = () => {
 
   return (
     <div className="form-container">
-      <div className="connect-wallet">
-        {!user && <button onClick={connectWallet}>Connect Wallet</button>}
-      </div>
       <form onSubmit={handleSubmit} className="form">
         <div>
           <label htmlFor="name">Drug Name:</label>

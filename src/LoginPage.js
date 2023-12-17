@@ -3,9 +3,11 @@ import { useApi } from "./apis/api";
 import { UserContext } from "./UserContext";
 
 const LoginPage = () => {
+  const [address, setAddress] = useState();
   const { loginUser } = useApi();
 
-  const { address } = useContext(UserContext);
+  // const { address } = useContext(UserContext);
+
   const [formData, setFormData] = useState({
     email: "",
     tc: "",
@@ -20,13 +22,23 @@ const LoginPage = () => {
   };
 
   useEffect(() => {
-    console.log("formData", address);
-  });
+    const getAccount = async () => {
+      const currentAccount = await window.ethereum.request({
+        method: "eth_accounts",
+      });
+      setAddress(currentAccount[0]);
+    };
+    getAccount();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(address);
     const response = await loginUser(address, formData.email);
+    console.log(response);
+    if (response.data.status === "success") {
+      window.location.assign("/createForm");
+    }
   };
   return (
     <body>

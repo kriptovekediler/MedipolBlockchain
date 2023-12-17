@@ -1,24 +1,35 @@
 // App.js or index.js
 
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { UserContext } from "./UserContext";
 import "./App.css";
-
-import { getUser } from "./apis/api";
 import QrPage from "./QrPage";
 import LoginPage from "./LoginPage";
-import ConnectWalletPage from "./components/ConnectWallet/ConnectWallet";
+import FormComponent from "./components/FormComponent";
 
 function App() {
   const adminAddress = process.env.REACT_APP_ADMIN_ADDRESS;
 
   const [address, setAddress] = useState();
+
+  const isAdminAddress = (address) => {
+    console.log("address", address === adminAddress);
+    console.log("address", address, adminAddress);
+    if (address === adminAddress) {
+      window.location.assign("/");
+    } else {
+      window.location.assign("/login");
+    }
+  };
+
   const connectWallet = async () => {
     const accounts = await window.ethereum.request({
       method: "eth_requestAccounts",
     });
     const account = accounts[0];
+
+    console.log("account", account);
 
     setAddress(account);
 
@@ -27,14 +38,13 @@ function App() {
     }
   };
 
-  const isAdminAddress = (address) => {
-    console.log("address", address, adminAddress);
-    if (address && address !== adminAddress) {
-      return false;
-    } else {
-      return true;
-    }
-  };
+  // useEffect(() => {
+  //   localStorage.getItem("accountToken");
+  //   const getToken = async () => {
+  //     setAddress(currentAccount[0]);
+  //   };
+  //   getAccount();
+  // }, []);
 
   return (
     <div className="App">
@@ -42,9 +52,16 @@ function App() {
         <UserContext.Provider value={{ address }}>
           <Routes>
             <Route path="/qrpage" element={<QrPage />} />
+            <Route path="/createForm" element={<FormComponent />} />
             <Route
               path="/login"
-              element={isAdminAddress ? <LoginPage /> : <Navigate to={"/"} />}
+              element={
+                address !== isAdminAddress ? (
+                  <LoginPage />
+                ) : (
+                  <Navigate to={"/"} />
+                )
+              }
             />
           </Routes>
         </UserContext.Provider>
