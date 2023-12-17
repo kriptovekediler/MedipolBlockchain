@@ -7,6 +7,7 @@ import "./App.css";
 import QrPage from "./QrPage";
 import LoginPage from "./LoginPage";
 import FormComponent from "./components/FormComponent";
+import EmptyPage from "./EmptyPage";
 
 function App() {
   const adminAddress = process.env.REACT_APP_ADMIN_ADDRESS;
@@ -44,6 +45,10 @@ function App() {
         <UserContext.Provider value={{ address }}>
           <Routes>
             <Route path="/qrpage/:id" element={<QrPage />} />
+            <Route
+              path="/generatedqr/:routingAddress"
+              element={<EmptyPage />}
+            />
             <Route path="/createForm" element={<FormComponent />} />
             <Route
               path="/login"

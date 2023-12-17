@@ -122,4 +122,44 @@ router.post("/registerDenounce", async (req, res) => {
   });
 });
 
+router.get("/userDenouncements/:address", async (req, res) => {
+  try {
+    const address = req.params;
+
+    const denouncements = await Denouncement.find();
+
+    console.log("de", denouncements);
+
+    return res.json({
+      status: "success",
+      data: denouncements,
+    });
+  } catch (error) {
+    Logger.error(error);
+  }
+});
+
+router.get("/denounce/:id", async (req, res) => {
+  try {
+    const id = req.params;
+    console.log("type", id, typeof id);
+    const denouncement = await Denouncement.findOne({
+      _id: id.id,
+    });
+
+    if (!denouncement) {
+      return res.status(400).json({
+        status: "failed",
+      });
+    }
+
+    return res.json({
+      status: "success",
+      data: denouncement,
+    });
+  } catch (error) {
+    Logger.error(error);
+  }
+});
+
 module.exports = router;

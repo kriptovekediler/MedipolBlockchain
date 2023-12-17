@@ -67,9 +67,45 @@ export const useApi = () => {
     return response;
   };
 
+  const getDenouncements = async (address) => {
+    try {
+      const response = await axios({
+        method: "get",
+        url: `${apiUrl}/register/userDenouncements/${address}`,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching denouncements:", error);
+      throw error;
+    }
+  };
+
+  const getDenouncement = async (id) => {
+    try {
+      const response = await axios({
+        method: "get",
+        url: `${apiUrl}/register/denounce/${id}`,
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      return response.data;
+    } catch (error) {
+      console.error("Error fetching denouncements:", error);
+      throw error;
+    }
+  };
+
   return {
     loginUser,
     getUser,
     registerDenouncement,
+    getDenouncements,
+    getDenouncement,
   };
 };

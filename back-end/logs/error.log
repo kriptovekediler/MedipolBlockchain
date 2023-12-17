@@ -10,3 +10,38 @@
 2023-12-16 23:36:13:3613 [31merror[39m: [31mCast to string failed for value "{}" (type Object) at path "address" for model "User"[39m
 2023-12-16 23:43:27:4327 [31merror[39m: [31mCannot set headers after they are sent to the client[39m
 2023-12-17 01:40:26:4026 [31merror[39m: [31mUser validation failed: address: Path `address` is required.[39m
+2023-12-17 05:58:14:5814 [31merror[39m: [31maddress.toLowerCase is not a function[39m
+2023-12-17 07:06:02:62 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '121231' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:06:09:69 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:06:29:629 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:06:40:640 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:06:41:641 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:06:43:643 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:06:44:644 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:07:04:74 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:07:26:726 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:07:26:726 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:07:46:746 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:07:57:757 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:08:21:821 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:08:41:841 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:08:50:850 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:09:10:910 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:09:19:919 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:09:23:923 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:09:24:924 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:09:25:925 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:09:42:942 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:10:02:102 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:10:49:1049 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:11:04:114 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:11:24:1124 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:11:44:1144 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:13:58:1358 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:14:18:1418 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:14:28:1428 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:14:48:1448 [31merror[39m: [31mCast to ObjectId failed for value "{ id: '657e5484d52ce3fa925cdf5a' }" (type Object) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:36:19:3619 [31merror[39m: [31mCast to ObjectId failed for value "123" (type string) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:36:25:3625 [31merror[39m: [31mCast to ObjectId failed for value "1241241254" (type string) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:36:33:3633 [31merror[39m: [31mCast to ObjectId failed for value "1241241254" (type string) at path "_id" for model "Denouncement"[39m
+2023-12-17 07:45:34:4534 [31merror[39m: [31mCast to ObjectId failed for value "222" (type string) at path "_id" for model "Denouncement"[39m

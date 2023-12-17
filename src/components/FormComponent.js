@@ -57,7 +57,7 @@ const FormComponent = () => {
   };
 
   const getMessageHash = async (nonce) => {
-    const msg = ethers.solidityPacked(
+    const msg = ethers.utils.solidityPack(
       ["address", "string", "uint", "string", "string", "string", "uint"],
       [
         address,
@@ -69,7 +69,7 @@ const FormComponent = () => {
         nonce,
       ]
     );
-    const msgHash = ethers.keccak256(msg);
+    const msgHash = ethers.utils.keccak256(msg);
     console.log("msg", msg);
     return msgHash;
   };
