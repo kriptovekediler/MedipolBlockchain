@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const faker = require("faker");
 
 const User = mongoose.model("User");
+const Denouncement = mongoose.model("Denouncement");
 
 const jwt_secret = process.env.JWT_SECRET;
 
@@ -29,8 +30,6 @@ router.post("/login", async (req, res) => {
         name,
       });
       await newAccount.save();
-    } else {
-      user.nonce += 1;
     }
     let token = jwt.sign(
       {
@@ -50,7 +49,7 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.post("getUser", async (req, res) => {
+router.post("/getUser", async (req, res) => {
   try {
     const address = req.body.address;
 
@@ -71,6 +70,56 @@ router.post("getUser", async (req, res) => {
   } catch (error) {
     Logger.error(error);
   }
+});
+
+router.post("/registerDenounce", async (req, res) => {
+  const {
+    denouncer,
+    name,
+    date,
+    drugSubstance,
+    clinicalTrialResults,
+    qualityControl,
+    signature,
+  } = req.body;
+
+  const denouncement = await Denouncement.findOne({
+    signature: signature,
+  });
+
+  if (denouncement) {
+    return res.status(400).json({
+      status: "failed",
+      data: "already denounced",
+    });
+  }
+
+  const newDenouncement = new Denouncement({
+    name: name,
+    productionDate: date,
+    drugSubstance: drugSubstance,
+    clinicalTrialResults: clinicalTrialResults,
+    qualityControl: qualityControl,
+    signature: signature,
+  });
+  newDenouncement.denounceInfo = {
+    denouncedBy: denouncer,
+    denounced: false,
+  };
+
+  const user = await User.findOne({
+    address: denouncer,
+  });
+
+  user.nonce += 1;
+
+  await newDenouncement.save();
+  await user.save();
+
+  return res.status(200).json({
+    status: "success",
+    data: newDenouncement,
+  });
 });
 
 module.exports = router;

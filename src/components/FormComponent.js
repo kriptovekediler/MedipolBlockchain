@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./FormComponent.css";
 
 import { ethers } from "ethers";
+import { useApi } from "../apis/api";
 
 const FormComponent = () => {
   const [address, setAddress] = useState();
+
+  const { registerDenouncement } = useApi();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -39,9 +42,18 @@ const FormComponent = () => {
     const msg = await getMessageHash(nonce);
     console.log("msg", msg);
     const sign = await getSignature(msg);
-    console.log("sign", sign);
+    console.log("signmignnn", sign);
 
-    console.log("Form Data:", formData);
+    const response = await registerDenouncement(
+      address,
+      formData.name,
+      new Date(formData.date).getTime() / 1000,
+      formData.drugSubstance,
+      formData.clinicalTrialResults,
+      formData.qualityControl,
+      sign
+    );
+    console.log("response", response);
   };
 
   const getMessageHash = async (nonce) => {

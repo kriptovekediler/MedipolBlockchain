@@ -33,6 +33,9 @@ const Denouncement = mongoose.Schema(
     signature: {
       type: String,
       required: true,
+      index: {
+        unique: true,
+      },
     },
   },
   {

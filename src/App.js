@@ -38,14 +38,6 @@ function App() {
     }
   };
 
-  // useEffect(() => {
-  //   localStorage.getItem("accountToken");
-  //   const getToken = async () => {
-  //     setAddress(currentAccount[0]);
-  //   };
-  //   getAccount();
-  // }, []);
-
   return (
     <div className="App">
       <BrowserRouter>

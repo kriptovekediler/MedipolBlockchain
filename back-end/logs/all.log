@@ -103,3 +103,55 @@
 [35m[39m
 2023-12-17 03:59:26:5926 [35mhttp[39m: [35mPOST /register/login 200 237 - 420.104 ms[39m
 [35m[39m
+2023-12-17 04:08:44:844 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:08:44:844 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:08:58:858 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:08:58:858 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:13:56:1356 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:13:56:1356 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:27:39:2739 [35mhttp[39m: [35mPOST /register/login 200 237 - 179.258 ms[39m
+[35m[39m
+2023-12-17 04:27:58:2758 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:27:58:2758 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:28:41:2841 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:28:41:2841 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:28:47:2847 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:28:47:2847 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:30:06:306 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:30:06:306 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:30:51:3051 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:30:51:3051 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:31:59:3159 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:31:59:3159 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:32:17:3217 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:32:17:3217 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:32:46:3246 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:32:46:3246 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:33:32:3332 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:33:32:3332 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:33:50:3350 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:33:50:3350 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:34:00:340 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:34:00:340 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:42:05:425 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:42:05:425 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:42:43:4243 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:42:43:4243 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:42:49:4249 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:42:49:4249 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:43:20:4320 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:43:20:4320 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:43:27:4327 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:43:27:4327 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:49:10:4910 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:49:10:4910 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:50:40:5040 [35mhttp[39m: [35mPOST /register/registerDenounce - - - - ms[39m
+[35m[39m
+2023-12-17 04:51:21:5121 [35mhttp[39m: [35mPOST /register/registerDenounce 400 46 - 169.319 ms[39m
+[35m[39m
+2023-12-17 04:52:20:5220 [35mhttp[39m: [35mPOST /register/registerDenounce - - - - ms[39m
+[35m[39m
+2023-12-17 04:52:55:5255 [32minfo[39m: [32mserver has been connected to the db server[39m
+2023-12-17 04:52:55:5255 [32minfo[39m: [32martion server is running at port 8000[39m
+2023-12-17 04:53:08:538 [35mhttp[39m: [35mPOST /register/registerDenounce 200 512 - 669.592 ms[39m
+[35m[39m
