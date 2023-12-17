@@ -42,7 +42,7 @@ const FormComponent = () => {
     const msg = await getMessageHash(nonce);
     console.log("msg", msg);
     const sign = await getSignature(msg);
-    console.log("signmignnn", sign);
+    console.log("signmign", sign);
 
     const response = await registerDenouncement(
       address,

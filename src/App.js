@@ -43,7 +43,7 @@ function App() {
       <BrowserRouter>
         <UserContext.Provider value={{ address }}>
           <Routes>
-            <Route path="/qrpage" element={<QrPage />} />
+            <Route path="/qrpage/:id" element={<QrPage />} />
             <Route path="/createForm" element={<FormComponent />} />
             <Route
               path="/login"
